@@ -1,5 +1,23 @@
-*.pyc
-*~
-__pycache__
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django / Flask
+*.log
 db.sqlite3
-/static
+db.sqlite3-journal
+instance/
+/staticfiles/
+
+# Ambiente virtual / segredos
+.env
+.venv/
+venv/
+env/
+
+# IDE / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
