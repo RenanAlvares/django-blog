@@ -23,8 +23,10 @@ manage.py
 ```bash
 python -m venv .venv
 # Windows: .venv\Scripts\activate  |  Linux/Mac: source .venv/bin/activate
-pip install django
+pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
 Acesse http://localhost:8000
+
+> Por padrão usa **SQLite** e roda sem nenhuma configuração. Para personalizar chave secreta ou debug, copie `.env.example` para `.env`.
